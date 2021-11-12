@@ -8281,7 +8281,7 @@ h1, h2, h3, h4, h5,
       color: #b1b493; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: #fff !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -8428,7 +8428,7 @@ h1, h2, h3, h4, h5,
         background: #b3b3b3; }
   .owl-carousel.home-slider {
     position: relative;
-    height: 750px;
+    height: 530px;
     z-index: 0; }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
@@ -8449,7 +8449,7 @@ h1, h2, h3, h4, h5,
         background: #000000;
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
-        height: 750px;
+        height: 430px;
         z-index: 0; }
         @media (max-width: 991.98px) {
           .owl-carousel.home-slider .slider-item .slider-text {
@@ -8457,7 +8457,7 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .slider-item .slider-text .one-third {
           width: 70%;
           position: relative;
-          height: 750px;
+          height: 530px;
           z-index: -1;
           -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
           -moz-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
@@ -8519,7 +8519,7 @@ h1, h2, h3, h4, h5,
             @media (min-width: 992px) {
               .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
                 position: absolute;
-                top: 50%;
+                top: 43%;
                 left: 0;
                 -webkit-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
@@ -9329,22 +9329,39 @@ textarea.form-control {
 .ftco-counter {
   overflow-x: hidden;
   position: relative;
-  padding: 5em 0; }
+  padding: 2em 0; }
+  .ftco-counter {
+    overflow-x: hidden;
+    position: relative;
+    padding: 5em 0; }
   @media (max-width: 1199.98px) {
     .ftco-counter {
-      background-position: center center !important; } }
+      background-position: center center !important; } 
+      .ftco-counter1 {
+        background-position: center center !important; }}
   .ftco-counter .block-18 {
     display: block;
     width: 100%; }
+    .ftco-counter1 .block-18 {
+      display: block;
+      width: 100%; }
     @media (max-width: 991.98px) {
       .ftco-counter .block-18 {
-        margin-bottom: 2em; } }
+        margin-bottom: 2em; } 
+        .ftco-counter1 .block-18 {
+          margin-bottom: 2em; } }
   .ftco-counter .icon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background: #b1b493;
     position: relative; }
+    .ftco-counter1 .icon {
+      /* width: 60px; */
+      height: 60px;
+      border-radius: 50%;
+      background: #b1b493;
+      position: relative; }
     .ftco-counter .icon span {
       font-size: 40px;
       color: #fff; }
@@ -9765,3 +9782,89 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+.video-play{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    /* border-radius: 25px;
+    width: 20px;
+    height: 20px; */
+    color: white;
+    border-radius: 20px solid;
+    /* text-align: center;*/
+}
+.btn1{
+  width: 141px;
+}
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 34%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #e8c78b;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
